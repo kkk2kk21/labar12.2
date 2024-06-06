@@ -102,16 +102,6 @@ namespace labar12._2.Tests
         }
 
         [TestMethod]
-        public void Print_ShouldPrintEmptyTable()
-        {
-            var hashtable = new MyHashtable<TestKey, TestValue>();
-
-            // Проверяем, что выводит "Таблица пустая"
-            // при печати пустой таблицы
-            Assert.IsTrue(ConsoleOutputMatches(() => hashtable.Print(), "Таблица пустая"));
-        }
-
-        [TestMethod]
         public void GetIndex_ShouldReturnCorrectIndex()
         {
             var hashtable = new MyHashtable<TestKey, TestValue>();
@@ -170,6 +160,76 @@ namespace labar12._2.Tests
 
             Console.SetOut(originalConsoleOut);
             return consoleOutput.ToString().Trim() == expectedOutput;
+        }
+        [TestMethod]
+        public void AddItem_ShouldAddItemCorrectly()
+        {
+            var hashtable = new MyHashtable<TestKey, TestValue>();
+            var key = new TestKey { Value = 1 };
+            var value = new TestValue { Data = 42 };
+
+            // Directly invoking AddItem method for testing purposes
+            hashtable.AddItem(key, value);
+
+            Assert.AreEqual(1, hashtable.Count);
+            Assert.AreEqual(value, hashtable.FindKeyByData(key).Value);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "Нет места в таблице")]
+        public void AddItem_ShouldThrowExceptionWhenTableFull()
+        {
+            var hashtable = new MyHashtable<TestKey, TestValue>(1); // Small capacity to trigger the exception
+            var key1 = new TestKey { Value = 1 };
+            var value1 = new TestValue { Data = 42 };
+            var key2 = new TestKey { Value = 2 };
+            var value2 = new TestValue { Data = 84 };
+
+            hashtable.AddItem(key1, value1);
+
+            // This should throw an exception because the table is already full
+            hashtable.AddItem(key2, value2);
+        }
+
+        [TestMethod]
+        public void AddData_ShouldAddDataCorrectly()
+        {
+            var hashtable = new MyHashtable<TestKey, TestValue>();
+            var key = new TestKey { Value = 1 };
+            var value = new TestValue { Data = 42 };
+
+            bool result = hashtable.AddData(key, value);
+
+            Assert.IsTrue(result);
+            Assert.AreEqual(1, hashtable.Count);
+            Assert.AreEqual(value, hashtable.FindKeyByData(key).Value);
+        }
+
+        [TestMethod]
+        public void AddData_ShouldRehashWhenCapacityExceeded()
+        {
+            var hashtable = new MyHashtable<TestKey, TestValue>(2, 0.49); // Небольшая начальная емкость и низкий коэффициент заполнения обеспечивают запуск
+            var key1 = new TestKey { Value = 1 };
+            var value1 = new TestValue { Data = 42 };
+            var key2 = new TestKey { Value = 2 };
+            var value2 = new TestValue { Data = 84 };
+
+            hashtable.AddData(key1, value1);
+            hashtable.AddData(key2, value2);
+
+            Assert.AreEqual(2, hashtable.Count);
+            Assert.AreEqual(4, hashtable.Capacity); // Capacity должен удвоиться
+            Assert.AreEqual(value1, hashtable.FindKeyByData(key1).Value);
+            Assert.AreEqual(value2, hashtable.FindKeyByData(key2).Value);
+        }
+        [TestMethod]
+        public void Print_ShouldPrintEmptyTable()
+        {
+            var hashtable = new MyHashtable<TestKey, TestValue>();
+
+            // Проверяем, что выводит "Таблица пустая"
+            // при печати пустой таблицы
+            Assert.IsTrue(ConsoleOutputMatches(() => hashtable.Print(), "Таблица пустая"));
         }
     }
 }

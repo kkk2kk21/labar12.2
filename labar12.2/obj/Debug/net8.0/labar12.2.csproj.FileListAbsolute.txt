@@ -16,3 +16,4 @@ C:\Users\mrkru\source\repos\labar12.2\labar12.2\obj\Debug\net8.0\refint\labar12.
 C:\Users\mrkru\source\repos\labar12.2\labar12.2\obj\Debug\net8.0\labar12.2.pdb
 C:\Users\mrkru\source\repos\labar12.2\labar12.2\obj\Debug\net8.0\labar12.2.genruntimeconfig.cache
 C:\Users\mrkru\source\repos\labar12.2\labar12.2\obj\Debug\net8.0\ref\labar12.2.dll
+C:\Users\mrkru\source\repos\labar12.2\labar12.2\obj\Debug\net8.0\labar12.2.sourcelink.json

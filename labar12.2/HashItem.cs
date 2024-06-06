@@ -107,7 +107,7 @@ namespace labar12._2
                 return false;
             }
         }
-        void AddItem(TKey key, TValue value)
+        public void AddItem(TKey key, TValue value)
         {
             if (value == null) return;
             int index = GetIndex(key);
@@ -129,6 +129,7 @@ namespace labar12._2
             dFlag[current] = true;
             count++;
         }
+
         public bool AddData(TKey key, TValue value)
         {
             if (Items[GetIndex(key)] != null)
@@ -140,18 +141,28 @@ namespace labar12._2
             }
             if ((double)Count / Capacity > fillRatio)
             {
-                Item<TKey, TValue>[] tempItems = Items;
-                Items = new Item<TKey, TValue>[tempItems.Length * 2];
-                dFlag = new bool[Items.Length * 2];
-                count = 0;
-                for (int i = 0; i < tempItems.Length; i++)
-                {
-                    if (tempItems[i] != null)
-                        AddItem(tempItems[i].Key, tempItems[i].Value);
-                }
+                Rehash();
             }
             AddItem(key, value);
             return true;
+        }
+
+        private void Rehash()
+        {
+            Item<TKey, TValue>[] tempItems = Items;
+            bool[] tempDFlag = dFlag;
+            int newSize = tempItems.Length * 2;
+            Items = new Item<TKey, TValue>[newSize];
+            dFlag = new bool[newSize];
+            count = 0;
+
+            for (int i = 0; i < tempItems.Length; i++)
+            {
+                if (tempItems[i] != null)
+                {
+                    AddItem(tempItems[i].Key, tempItems[i].Value);
+                }
+            }
         }
     }
 }

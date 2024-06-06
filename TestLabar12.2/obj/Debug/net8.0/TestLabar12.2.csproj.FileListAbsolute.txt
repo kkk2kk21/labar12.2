@@ -117,3 +117,4 @@ C:\Users\mrkru\source\repos\labar12.2\TestLabar12.2\obj\Debug\net8.0\refint\Test
 C:\Users\mrkru\source\repos\labar12.2\TestLabar12.2\obj\Debug\net8.0\TestLabar12.2.pdb
 C:\Users\mrkru\source\repos\labar12.2\TestLabar12.2\obj\Debug\net8.0\TestLabar12.2.genruntimeconfig.cache
 C:\Users\mrkru\source\repos\labar12.2\TestLabar12.2\obj\Debug\net8.0\ref\TestLabar12.2.dll
+C:\Users\mrkru\source\repos\labar12.2\TestLabar12.2\obj\Debug\net8.0\TestLabar12.2.sourcelink.json

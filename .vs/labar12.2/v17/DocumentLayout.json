@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|solutionrelative:labar12.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|solutionrelative:labar12.2\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BA7F0A1-5DCA-4FE1-B80B-0590F6CF6A5C}|TestLabar12.2\\TestLabar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\testlabar12.2\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA7F0A1-5DCA-4FE1-B80B-0590F6CF6A5C}|TestLabar12.2\\TestLabar12.2.csproj|solutionrelative:testlabar12.2\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\hashitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|solutionrelative:labar12.2\\hashitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA7F0A1-5DCA-4FE1-B80B-0590F6CF6A5C}|TestLabar12.2\\TestLabar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\testlabar12.2\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA7F0A1-5DCA-4FE1-B80B-0590F6CF6A5C}|TestLabar12.2\\TestLabar12.2.csproj|solutionrelative:testlabar12.2\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|solutionrelative:labar12.2\\hashtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|c:\\users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474E2882-190E-40E2-BA9D-625F7B5A6EA8}|labar12.2\\labar12.2.csproj|solutionrelative:labar12.2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,46 +42,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\TestLabar12.2\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TestLabar12.2\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\TestLabar12.2\\UnitTest1.cs",
               "RelativeToolTip": "TestLabar12.2\\UnitTest1.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAnwK8AAAAAAAAA",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAuwOgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T22:15:06.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HashItem.cs",
               "DocumentMoniker": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\HashItem.cs",
               "RelativeDocumentMoniker": "labar12.2\\HashItem.cs",
               "ToolTip": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\HashItem.cs",
               "RelativeToolTip": "labar12.2\\HashItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAYAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T13:05:39.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HashTable.cs",
               "DocumentMoniker": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\HashTable.cs",
               "RelativeDocumentMoniker": "labar12.2\\HashTable.cs",
               "ToolTip": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\HashTable.cs",
               "RelativeToolTip": "labar12.2\\HashTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T13:05:31.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mrkru\\source\\repos\\labar12.2\\labar12.2\\Program.cs",
               "RelativeDocumentMoniker": "labar12.2\\Program.cs",
